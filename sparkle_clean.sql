@@ -280,6 +280,35 @@ ALTER TABLE `reviews`
   ADD CONSTRAINT `reviews_ibfk_2` FOREIGN KEY (`service_id`) REFERENCES `services` (`id`) ON DELETE SET NULL;
 COMMIT;
 
+
+-- --------------------------------------------------------
+-- Table structure for table `admins`
+-- --------------------------------------------------------
+
+CREATE TABLE `admins` (
+  `id` INT AUTO_INCREMENT PRIMARY KEY,
+  `username` VARCHAR(100) NOT NULL UNIQUE,
+  `password` VARCHAR(255) NOT NULL,
+  `full_name` VARCHAR(150),
+  `email` VARCHAR(100) NOT NULL UNIQUE,
+  `role` ENUM('superadmin', 'moderator') NOT NULL DEFAULT 'moderator',
+  `created_at` TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+-- Dumping data for table `admins`
+-- --------------------------------------------------------
+
+-- This inserts a single admin user.
+-- Username: admin
+-- Password: admin123
+-- The password has been securely hashed. You would generate this hash in PHP using:
+-- password_hash('admin123', PASSWORD_DEFAULT);
+
+INSERT INTO `admins` (`username`, `password`, `full_name`, `email`, `role`) VALUES
+('admin', '$2y$10$eI8.4w.yN.1c0o5XbJ3W7e.KzG4y.v.gG5.zF8B.qY7.uG2.oQ2iK', 'Administrator', 'admin@sparkleclean.com', 'superadmin');
+
+
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
