@@ -18,30 +18,6 @@ Contact Form: A functional contact form that captures user messages and stores t
 
 Responsive Design: The entire website is styled with a single, comprehensive CSS file that ensures a seamless experience on desktops, tablets, and mobile devices.
 
-Technology Stack
-Frontend
-
-Backend
-
-Database
-
-Server Environment
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 Setup and Installation
 To run this project locally, you will need a server environment like XAMPP.
@@ -52,7 +28,7 @@ Ensure you have XAMPP installed and running (with Apache and MySQL services star
 
 Clone the Repository:
 
-git clone [https://github.com/your-username/sparkleclean-services.git](https://github.com/your-username/sparkleclean-services.git)
+git clone [https://github.com/symon/sparkleclean-services.git](https://github.com/symon/sparkleclean-services.git)
 
 Alternatively, download the project files and place them in your XAMPP htdocs directory.
 
@@ -80,7 +56,7 @@ Inside the uploads folder, create another folder named nid. This is required for
 
 Run the Application:
 
-Open your web browser and navigate to http://localhost/your_project_folder_name/home.php.
+Open your web browser and navigate to http://localhost/sparkle-clean/home.php.
 
 Project Structure
 /sparkleclean/
