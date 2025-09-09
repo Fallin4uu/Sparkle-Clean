@@ -1,0 +1,547 @@
+/* ==============================================
+   SparkleClean :: Main Stylesheet v2.0
+   ==============================================
+*/
+
+/* --- 1. Variables & Global Styles --- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap');
+
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #6c757d;
+  --light-color: #f8f9fa;
+  --dark-color: #343a40;
+  --accent-color: #17a2b8;
+  --success-color: #28a745;
+  --pending-color: #ffc107;
+  --cancelled-color: #dc3545;
+  --font-family: 'Poppins', sans-serif;
+  --border-radius: 8px;
+  --box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  line-height: 1.7;
+  background: var(--light-color);
+  color: var(--dark-color);
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.section {
+  padding: 4rem 0;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  color: var(--dark-color);
+}
+
+.page-title {
+  text-align: center;
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  color: var(--dark-color);
+}
+
+.page-subtitle {
+  text-align: center;
+  max-width: 600px;
+  margin: -2rem auto 3rem;
+  font-size: 1.1rem;
+  color: #666;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+/* --- 2. Header & Navigation --- */
+.main-header {
+  background: #fff;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.07);
+}
+
+.main-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-header h1 a {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--dark-color);
+}
+
+.main-header nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.main-header nav a {
+  font-weight: 600;
+  color: var(--dark-color);
+  font-size: 1rem;
+  position: relative;
+}
+
+.main-header nav a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background: var(--primary-color);
+  transition: width 0.3s ease;
+}
+
+.main-header nav a:hover::after,
+.main-header nav a.active::after {
+  width: 100%;
+}
+
+.btn-nav {
+  background: var(--primary-color);
+  color: #fff;
+  padding: 0.6rem 1.2rem;
+  border-radius: 50px;
+  transition: background-color 0.3s;
+}
+
+.btn-nav:hover {
+  background: #0056b3;
+}
+
+.btn-nav::after {
+  display: none;
+}
+
+/* --- 3. Hero Section --- */
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://placehold.co/1600x800/EFEFEF/333333?text=Clean+Living+Space') no-repeat center center/cover;
+  color: #fff;
+  text-align: center;
+  padding: 6rem 0;
+}
+
+.hero h2 {
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin: 1rem 0 2rem;
+}
+
+.btn-primary {
+  background: var(--primary-color);
+  color: #fff;
+  padding: 0.8rem 2rem;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background: #0056b3;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* --- 4. Cards (Service, Worker) --- */
+.service-card,
+.worker-card,
+.service-card-full {
+  background: #fff;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  text-align: center;
+  padding: 2rem;
+  transition: all 0.3s ease;
+  border: 1px solid #eee;
+}
+
+.service-card:hover,
+.worker-card:hover,
+.service-card-full:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.service-card img,
+.worker-card img,
+.service-card-full img {
+  margin-bottom: 1rem;
+}
+
+.worker-card img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.service-card h3,
+.worker-card h3,
+.service-card-full h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.worker-card h4 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+/* --- 5. Forms --- */
+.form-container,
+.review-form-container,
+.contact-form-container {
+  max-width: 600px;
+  margin: 2rem auto;
+  background: #fff;
+  padding: 2.5rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+}
+
+.auth-form {
+  max-width: 500px;
+}
+
+.input-group {
+  margin-bottom: 1.5rem;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.input-group input,
+.input-group select,
+.input-group textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: var(--font-family);
+  font-size: 1rem;
+}
+
+.input-group input:focus,
+.input-group select:focus,
+.input-group textarea:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+.auth-switch {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+/* --- 6. Dashboard --- */
+.dashboard-card {
+  background: #fff;
+  padding: 2.5rem;
+  margin-bottom: 2rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+}
+
+.dashboard-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid var(--light-color);
+  padding-bottom: 0.75rem;
+}
+
+.status-verified {
+  color: var(--success-color);
+  font-weight: 600;
+}
+
+.status-pending {
+  color: var(--pending-color);
+  font-weight: 600;
+}
+
+.nid-form .input-group input[type="file"] {
+  padding: 0.5rem;
+  border: 1px dashed #ccc;
+  background-color: var(--light-color);
+}
+
+.dashboard-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.dashboard-table th,
+.dashboard-table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid var(--light-color);
+}
+
+.dashboard-table thead {
+  background: var(--light-color);
+}
+
+.status-badge {
+  padding: 0.3rem 0.8rem;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 0.8rem;
+  color: #fff;
+}
+
+.status-pending {
+  background-color: var(--pending-color);
+}
+
+.status-confirmed {
+  background-color: var(--primary-color);
+}
+
+.status-completed {
+  background-color: var(--success-color);
+}
+
+.status-cancelled {
+  background-color: var(--cancelled-color);
+}
+
+/* --- 7. Footer & Other Sections --- */
+.main-footer {
+  background: var(--dark-color);
+  color: #fff;
+  text-align: center;
+  padding: 2rem 0;
+  margin-top: 4rem;
+}
+
+/* -- Reviews Page Specifics -- */
+.reviews-section {
+  background: var(--light-color);
+}
+
+.review-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.review {
+  background: #fff;
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  border-left: 5px solid var(--primary-color);
+}
+
+.star-rating {
+  color: #ffc107;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.review p {
+  font-style: italic;
+  font-size: 1.1rem;
+}
+
+.review .author {
+  text-align: right;
+  font-weight: 600;
+  margin-top: 1rem;
+  color: var(--dark-color);
+}
+
+.review-list-full .review-full {
+  background: #fff;
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  margin-bottom: 2rem;
+  border-bottom: 1px solid var(--light-color);
+}
+
+/* -- Contact Page Specifics -- */
+.contact-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: flex-start;
+}
+
+.contact-info h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.contact-info ul {
+  list-style: none;
+  margin-top: 1.5rem;
+}
+
+.contact-info li {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.contact-info li strong {
+  color: var(--dark-color);
+}
+
+.map-container {
+  margin-top: 2rem;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  box-shadow: var(--box-shadow);
+}
+
+/* -- Fees Page Specifics -- */
+.fees-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 2rem;
+  background: #fff;
+  box-shadow: var(--box-shadow);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+.fees-table th,
+.fees-table td {
+  padding: 1.25rem;
+  text-align: left;
+  border-bottom: 1px solid var(--light-color);
+}
+
+.fees-table thead {
+  background: var(--dark-color);
+  color: #fff;
+}
+
+.fees-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.fees-table tbody tr:hover {
+  background-color: var(--light-color);
+}
+
+.alert {
+  padding: 1rem;
+  margin: 0 auto 2rem auto;
+  border: 1px solid transparent;
+  border-radius: var(--border-radius);
+  max-width: 600px;
+  text-align: center;
+}
+
+.alert-success {
+  color: #155724;
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+}
+
+.alert-danger {
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+}
+
+
+/* --- 8. Responsive Design --- */
+@media(max-width: 768px) {
+
+  .grid-3,
+  .review-list,
+  .contact-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .main-header .container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  /* Responsive Table for Fees Page */
+  .fees-table thead {
+    display: none;
+  }
+
+  .fees-table,
+  .fees-table tbody,
+  .fees-table tr,
+  .fees-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .fees-table tr {
+    margin-bottom: 1.5rem;
+    border: 1px solid var(--light-color);
+    border-radius: var(--border-radius);
+  }
+
+  .fees-table td {
+    text-align: right;
+    padding-left: 50%;
+    position: relative;
+    border-bottom: none;
+  }
+
+  .fees-table td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 1rem;
+    width: 45%;
+    padding-right: 1rem;
+    text-align: left;
+    font-weight: bold;
+    color: var(--dark-color);
+  }
+}
