@@ -1,8 +1,8 @@
-**SparkleClean Services - Web Application**
+<h1>**SparkleClean Services - Web Application**</h1>
 
 SparkleClean Services is a complete, multi-page web application for a professional cleaning company. Built with PHP and MySQL, it allows potential customers to browse services, view prices, and read client reviews. Registered clients can log in to a secure dashboard to schedule appointments and manage their account, which includes a secure NID verification system.
 
-Key Features
+<h3>**Key Features**</h3>
 
 **Dynamic Public Pages:** The website dynamically loads all content—such as services, pricing, team members, and reviews—directly from the MySQL database.
 
@@ -21,7 +21,7 @@ Key Features
 **Responsive Design:** The entire website is styled with a single, comprehensive CSS file that ensures a seamless experience on desktops, tablets, and mobile devices.
 
 
-**Setup and Installation**
+<h3>**Setup and Installation**</h3>
 
 To run this project locally, you will need a server environment like XAMPP.
 
@@ -62,6 +62,7 @@ Inside the uploads folder, create another folder named nid. This is required for
 Open your web browser and navigate to http://localhost/sparkle-clean/home.php.
 
 **Project Structure**
+
 /sparkleclean/
 
 
