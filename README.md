@@ -62,6 +62,9 @@ Project Structure
 /sparkleclean/
 
 
+    ├── 📄 admin_dashboard.php  # Admin Dashboard page
+    ├── 📄 admin_login.php      # Admin login page
+    ├── 📄 ratings.php          # Ratings page
     ├── 📄 home.php             # Main landing page
     ├── 📄 services.php         # Displays all cleaning services
     ├── 📄 reviews.php          # Shows client reviews and form
