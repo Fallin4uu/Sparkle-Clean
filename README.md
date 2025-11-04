@@ -60,7 +60,9 @@ Open your web browser and navigate to http://localhost/sparkle-clean/home.php.
 
 Project Structure
 /sparkleclean/
+
 │
+
 ├── 📄 home.php             # Main landing page
 
 ├── 📄 services.php         # Displays all cleaning services
@@ -91,22 +93,22 @@ Project Structure
 
 ├── 📁 api/                  # Backend scripts
 
-│   ├── 📄 db_connect.php
+    │   ├── 📄 db_connect.php
 
-│   ├── 📄 register.php
+    │   ├── 📄 register.php
 
-│   ├── 📄 login.php
+    │   ├── 📄 login.php
 
-│   ├── 📄 logout.php
+    │   ├── 📄 logout.php
 
-│   ├── 📄 submit_review.php
+    │   ├── 📄 submit_review.php
 
-│   ├── 📄 schedule_appointment.php
+    │   ├── 📄 schedule_appointment.php
 
-│   ├── 📄 verify_nid.php
+    │   ├── 📄 verify_nid.php
 
-│   └── 📄 contact_handler.php
+    │   └── 📄 contact_handler.php
 
 │
 └── 📁 uploads/
-    └── 📁 nid/
+        └── 📁 nid/
