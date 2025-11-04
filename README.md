@@ -79,12 +79,13 @@ Project Structure
     ├── 📄 style.css            # Single stylesheet for all pages
     ├── 📄 sparkle_clean.sql   # SQL file for database creation
     ├── 📁 api/                  # Backend scripts
+        ├── 📄 admin_verify_handler.php
         ├── 📄 db_connect.php
         ├── 📄 register.php
         ├── 📄 login.php
         ├── 📄 logout.php
         ├── 📄 submit_review.php
-        ├── 📄 schedule_appointment.php
+        ├── 📄 admin_login_handler.php
         ├── 📄 verify_nid.php
         └── 📄 contact_handler.php
     └── 📁 uploads/
