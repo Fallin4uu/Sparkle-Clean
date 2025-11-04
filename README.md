@@ -44,7 +44,7 @@ Upload and import the database_setup.sql file provided in the repository to crea
 
 Database Connection:
 
-Open the api/db_connect.php file.F
+Open the api/db_connect.php
 
 Verify that the database credentials ($servername, $username, $password, $dbname) match your local MySQL setup. The default XAMPP setup usually has a blank password for the root user.
 
