@@ -28,7 +28,7 @@ Ensure you have XAMPP installed and running (with Apache and MySQL services star
 
 Clone the Repository:
 
-git clone [https://github.com/symon/sparkleclean-services.git](https://github.com/symon/sparkleclean-services.git)
+git clone [https://github.com/Fallin4uu/Sparkle-Clean.git](https://github.com/Fallin4uu/Sparkle-Clean.git)
 
 Alternatively, download the project files and place them in your XAMPP htdocs directory.
 
@@ -44,7 +44,7 @@ Upload and import the database_setup.sql file provided in the repository to crea
 
 Database Connection:
 
-Open the api/db_connect.php file.
+Open the api/db_connect.php file.F
 
 Verify that the database credentials ($servername, $username, $password, $dbname) match your local MySQL setup. The default XAMPP setup usually has a blank password for the root user.
 
