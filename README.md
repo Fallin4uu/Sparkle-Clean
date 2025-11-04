@@ -61,44 +61,28 @@ Open your web browser and navigate to http://localhost/sparkle-clean/home.php.
 Project Structure
 /sparkleclean/
 
-│
 
-├── 📄 home.php             # Main landing page
-
-├── 📄 services.php         # Displays all cleaning services
-
-├── 📄 reviews.php          # Shows client reviews and form
-
-├── 📄 workers.php          # Lists team members
-
-├── 📄 contact.php          # Contact form and information
-
-├── 📄 schedule.php         # Appointment booking form
-
-├── 📄 fees.php             # Pricing table
-
-├── 📄 login.php            # Client login page
-
-├── 📄 registration.php     # Client registration page
-
-├── 📄 dashboard.php        # Secure client dashboard
-
-├── 📄 header.php           # Reusable dynamic header
-├── 📄 style.css            # Single stylesheet for all pages
-├── 📄 database_setup.sql   # SQL file for database creation
-│
-
-├── 📁 api/                  # Backend scripts
-
-    ├── 📄 db_connect.php
-    ├── 📄 register.php
-    ├── 📄 login.php
-    ├── 📄 logout.php
-    ├── 📄 submit_review.php
-    ├── 📄 schedule_appointment.php
-    ├── 📄 verify_nid.php
-    └── 📄 contact_handler.php
-
-│
-└── 📁 uploads/
-        └── 📁 nid/
+    ├── 📄 home.php             # Main landing page
+    ├── 📄 services.php         # Displays all cleaning services
+    ├── 📄 reviews.php          # Shows client reviews and form
+    ├── 📄 workers.php          # Lists team members
+    ├── 📄 contact.php          # Contact form and information
+    ├── 📄 schedule.php         # Appointment booking form
+    ├── 📄 fees.php             # Pricing table
+    ├── 📄 login.php            # Client login page
+    ├── 📄 registration.php     # Client registration page
+    ├── 📄 dashboard.php        # Secure client dashboard
+    ├── 📄 header.php           # Reusable dynamic header
+    ├── 📄 style.css            # Single stylesheet for all pages
+    ├── 📄 database_setup.sql   # SQL file for database creation
+    ├── 📁 api/                  # Backend scripts
+        ├── 📄 db_connect.php
+        ├── 📄 register.php
+        ├── 📄 login.php
+        ├── 📄 logout.php
+        ├── 📄 submit_review.php
+        ├── 📄 schedule_appointment.php
+        ├── 📄 verify_nid.php
+        └── 📄 contact_handler.php
+    └── 📁 uploads/
+            └── 📁 nid/
