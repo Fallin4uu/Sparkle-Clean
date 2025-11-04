@@ -84,30 +84,20 @@ Project Structure
 ├── 📄 dashboard.php        # Secure client dashboard
 
 ├── 📄 header.php           # Reusable dynamic header
-
 ├── 📄 style.css            # Single stylesheet for all pages
-
 ├── 📄 database_setup.sql   # SQL file for database creation
-
 │
 
 ├── 📁 api/                  # Backend scripts
 
-    │   ├── 📄 db_connect.php
-
-    │   ├── 📄 register.php
-
-    │   ├── 📄 login.php
-
-    │   ├── 📄 logout.php
-
-    │   ├── 📄 submit_review.php
-
-    │   ├── 📄 schedule_appointment.php
-
-    │   ├── 📄 verify_nid.php
-
-    │   └── 📄 contact_handler.php
+    ├── 📄 db_connect.php
+    ├── 📄 register.php
+    ├── 📄 login.php
+    ├── 📄 logout.php
+    ├── 📄 submit_review.php
+    ├── 📄 schedule_appointment.php
+    ├── 📄 verify_nid.php
+    └── 📄 contact_handler.php
 
 │
 └── 📁 uploads/
