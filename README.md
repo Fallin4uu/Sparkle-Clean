@@ -40,7 +40,7 @@ Create a new database named sparkle_clean.
 
 Select the sparkle_clean database and go to the "Import" tab.
 
-Upload and import the database_setup.sql file provided in the repository to create and populate all necessary tables.
+Upload and import the sparkle_clean.sql file provided in the repository to create and populate all necessary tables.
 
 Database Connection:
 
@@ -74,7 +74,7 @@ Project Structure
     ├── 📄 dashboard.php        # Secure client dashboard
     ├── 📄 header.php           # Reusable dynamic header
     ├── 📄 style.css            # Single stylesheet for all pages
-    ├── 📄 database_setup.sql   # SQL file for database creation
+    ├── 📄 sparkle_clean.sql   # SQL file for database creation
     ├── 📁 api/                  # Backend scripts
         ├── 📄 db_connect.php
         ├── 📄 register.php
